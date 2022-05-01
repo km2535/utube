@@ -1,38 +1,152 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+
+header{
+  background-color: black;
+  height: 2.5em;
+  padding: 10px;
+  width: 80%;
+  justify-self: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo{
+  float: left;
+  width: 20%;
+  margin: 0 auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo img{
+  margin-top: -5px;
+  width: 40px;
+  height: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logoName{
+  color: #fff;
+  position: relative;
+  font-size: 1.5em;
+  top: -15px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.biBtn{
+  background-color: rgb(80, 76, 76);
+  border: none;
+  font-size: 1em;
+  width: 2em;
+  height: 2.2em;
+  cursor: pointer;
+  color: #fff;
+}
+.searchInput{
+  width: 70%;
+  height: 1.85em;
+  font-size: 1rem;
+}
+.video{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+}
+.sideVideoCon{
+  display: inline-block;
+  padding: 11px 8% 0 8.6%;
+}
+.play {
+  float: left;
+  width: 60%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 10px;
+}
+.play iframe{
+  width: 100%;
+  height: 500px;
+}
+.sideVideo {
+  margin-left: 10px;
+  width: 37%;
+  justify-content: center;
+  overflow: auto;
+}
+.sideVideo .thumnail-video {
+    display: flex;
+    overflow: hidden;
+    margin-top: 2px;
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid rgb(51, 51, 51); */
+}
+.sideVideo .thumnail-video .title {
+    width: 100%;
+    border: 1px solid black;
+}
+.video .thumnail-video{
+  display: flex;
+  margin: 0 10px 2px 0;
+  width: 40%;
+  border: 1px solid rgb(51, 51, 51);
+}
+.thumbnail {
+    width: 50%;
+    height: 250px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.title{
+  width: 100%;
+}
+.play-channelTitle{
+  font-size: 2em;
+  font-weight: 700;
+
+}
+.play-title{
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:1000px) {
+  .play{
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .video{
+    flex-direction: column;
+  }
+  .video .thumnail-video{
+  display: flex;
+  margin: 0 10px 2px 0;
+  width: 81%;
+  border: 1px solid rgb(51, 51, 51);
+  }
+  .sideVideoCon{
+    display: block;
+    padding-right: 10%;
+  }
+  .sideVideoCon .sideVideo{
+    width: 100%;
+  }
+  .sideVideoCon .sideVideo .thumnail-video{
+    height: 250px;
+  }
+}
+
+@media (max-width:700px) {
+  header{
+ display: flex;
+ margin-top: 2px;
+ height: 100px;
+}
+.biBtn{
+  float: right;
+  }
+  .sideVideoCon{
+    padding: 11px 10% 0 9%;
+  }
+  .play{
+    margin-left: 0;
   }
 }
