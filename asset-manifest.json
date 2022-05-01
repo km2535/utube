@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/utube/static/css/main.27e1115e.css",
+    "main.js": "/utube/static/js/main.5efb37e5.js",
+    "static/media/youtube.png": "/utube/static/media/youtube.7cedfa3a8bc7d3993313.png",
+    "index.html": "/utube/index.html",
+    "main.27e1115e.css.map": "/utube/static/css/main.27e1115e.css.map",
+    "main.5efb37e5.js.map": "/utube/static/js/main.5efb37e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27e1115e.css",
+    "static/js/main.5efb37e5.js"
+  ]
+}
